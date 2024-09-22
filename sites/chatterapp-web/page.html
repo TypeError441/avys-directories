@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Chatterapp Web</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body style="text-align: right; background-image: linear-gradient(#48bfe3, #56cfe1, #64dfdf, #72efdd, #80ffdb)">
+        <button class="btn btn-warning" onclick="logOut()" style="margin: 10px;">Log Out</button>
+        <p class="subtitle">
+            For ma'am:<br>
+            <b>Firebase link:</b> 
+            https://console.firebase.google.com/u/2/project/doctorapp-acd3b/database/doctorapp-acd3b-default-rtdb/data<br>
+            <b>Firebase id:</b> 
+            doctorapp-acd3b
+        </p>
+        <center>
+            <p class="subtitle">Messages</p>
+            <div id="output">
+                
+            </div>
+            <div class="msgbox">
+                <input type="text" id="msginput" class="input" placeholder="Message">
+                <button class="btn btn-gradient-orange" id="sendMessage" onclick="sendMessage(document.getElementById('msginput').value)">Send</button>
+            </div>
+        </center>
+        <script src="page.js"></script>
+    </body>
+</html>

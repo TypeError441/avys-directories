@@ -1,0 +1,46 @@
+button {
+    color: white;
+    background-color: grey;
+}
+body {
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, 'Sans-Serif';
+    background-image: linear-gradient(darkslateblue, teal, darkslateblue);
+}
+#Sun {
+    float: left;
+    text-align: center;
+}
+#Earth {
+    float: right;
+    text-align: center;
+}
+#SunFacts {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+#SunReason {
+    font-size: 15px;
+    font-weight: 400;
+    color: #FAB2AA;
+}
+#EarthFacts {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+#EarthReason {
+    font-size: 15px;
+    font-weight: 400;
+    color: #D6F7EE;
+}
+img {
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 20px;
+    padding: 5px;
+    height: 300px;
+    width: 450px;
+}
+
+.exit {position:fixed;z-index:5;top:1em;right:1em;border:none;background-color:#ff584c;color:white;padding:1em 2em;border-radius:1em;letter-spacing:0px;font-size:1em;font-weight:600;}.exit:hover{cursor:pointer;}

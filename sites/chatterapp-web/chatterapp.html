@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Chatterapp Web</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body style="text-align: right;" class="btn-gradient-blue">
+        <button class="btn btn-warning" onclick="logOut()" style="margin: 10px;">Log Out</button>
+        <center>
+            <h1 id="username">Hello, username!</h1>
+            <div>
+                <input id="roomName" class="input" type="text">
+                <button id="joinRoom" class="btn btn-gradient-orange" onclick="createRoom(document.getElementById('roomName').value)">Create Room</button>
+            </div>
+            <p class="btn btn-gradient-orange title">Rooms</p>
+            <div id="output"></div>
+        </center>
+        <script src="functionality.js"></script>
+    </body>
+</html>

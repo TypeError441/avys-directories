@@ -1,0 +1,40 @@
+:root {
+    --clr-bg: #1a73e8;
+    --clr-btn: #00aeff;
+    --clr-btn-sides: #0083c0;
+    --clr-box: #ffffff;
+}
+* { color: #ffffff; font-family: 'Poppins', 'Product Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+html { height: 100%; background: var(--clr-bg); }
+.note { font-size: 20px; }
+
+.box {
+    background: var(--clr-box);
+    border: none;
+    margin: 10px 0 0 0;
+    width: fit-content;
+    padding: 10px;
+    box-shadow:
+        5px 5px 0 darkgray;
+}
+
+.box.canvas {
+    background: none;
+    border: 10px solid var(--clr-box);
+    box-shadow:
+        inset 5px 5px 0 darkgray,
+        5px 5px 0 darkgray;
+}
+
+.red { --clr-box: red; }
+.orange { --clr-box: orange; }
+.yellow { --clr-box: yellow; }
+.green { --clr-box: #00ff00; }
+.blue { --clr-box: dodgerblue; }
+.purple { --clr-box: #a200ff; }
+.pink { --clr-box: #ff00ff; }
+.white { --clr-box: #ffffff; }
+.gray { --clr-box: #808080; }
+.black { --clr-box: #000000; }
+
+.exit {position:fixed;z-index:5;top:1em;right:1em;border:none;background-color:#ff584c;color:white;padding:1em 2em;border-radius:1em;letter-spacing:0px;font-size:1em;font-weight:600;}.exit:hover{cursor:pointer;}

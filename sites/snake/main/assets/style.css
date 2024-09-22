@@ -1,0 +1,33 @@
+:root {
+    --background-color: #eeeeee;
+    --snake-color: #82c1ff;
+    --food-color: #ff7d7d;
+}
+* { margin: 0; padding: 0; }
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #100022;
+    color: #ffffff;
+}
+.title { font-size: 2rem; font-weight: bold; }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-board {
+    --board-size: 21;
+    background-color: var(--background-color);
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(var(--board-size), 1fr);
+    grid-template-columns: repeat(var(--board-size), 1fr);
+}
+
+.snake { background-color: var(--snake-color); border-radius: 0.5em; }
+
+.food { background-color: var(--food-color); border-radius: 0.5em; }
+
+.exit {position:fixed;z-index:5;top:1em;right:1em;border:none;background-color:#ff584c;color:white;padding:1em 2em;border-radius:1em;letter-spacing:0px;font-size:1em;font-weight:600;}.exit:hover{cursor:pointer;}

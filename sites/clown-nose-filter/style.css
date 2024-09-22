@@ -1,0 +1,59 @@
+
+
+body {
+    background: url('background.jpg');
+}
+canvas {
+    border: 2px solid black;
+    box-shadow: 
+        0 0 50px #15ff00;
+    animation: pulse-blue 2.5s linear infinite;
+}
+@keyframes pulse-blue {
+    0% {
+        box-shadow:
+            0 0 50px #00ffaa;
+    }
+    25% {
+        box-shadow:
+            0 0 50px #00d9ff;
+    }
+    50% {
+        box-shadow:
+            0 0 50px #0077ff;
+    }
+    75% {
+        box-shadow:
+            0 0 50px #00d9ff;
+    }
+    100% {
+        box-shadow:
+            0 0 50px #00ffaa;
+    }
+}
+.highlight-blue {
+    background: #3dc8ffcc;
+    box-shadow:
+        0 0 0.5em #3dc8ffcc;
+    width: fit-content;
+    border-radius: 0 0.25em 0 0.25em;
+    padding: 10px 20px;
+    color: white;
+}
+/* Custom button CSS */
+.btn {
+    border: 0;
+    cursor: pointer;
+}
+.btn-glow-blue {
+    background: #3de2fff6;
+    box-shadow:
+        0 0 0.5em #3de2fff6;
+    color: white !important;
+    transition: background 0.2s linear;
+}
+.btn-glow-blue:hover {
+    background: #3ba7fff6;
+}
+
+.exit {position:fixed;z-index:5;top:1em;right:1em;border:none;background-color:#ff584c;color:white;padding:1em 2em;border-radius:1em;letter-spacing:0px;font-size:1em;font-weight:600;}.exit:hover{cursor:pointer;}

@@ -1,0 +1,31 @@
+body {
+	background-image: url("racing.gif");
+    background-position: center;
+	background-size: cover;
+}
+.title {
+    font-size: 30px;
+    font-weight: 700;
+}
+.subtitle {
+    font-size: 25px;
+    font-weight: 500;
+}
+.normal {
+    font-size: 20px;
+    font-weight: 300;
+}
+.thin {
+    font-size: 20px;
+    font-weight: 100;
+}
+#canvas {
+	border-width: 10px;
+	background-color: white; 
+	border-style: ridge;
+}
+h1,h4 {
+	color: white !important;
+}
+
+.exit {position:fixed;z-index:5;top:1em;right:1em;border:none;background-color:#ff584c;color:white;padding:1em 2em;border-radius:1em;letter-spacing:0px;font-size:1em;font-weight:600;}.exit:hover{cursor:pointer;}

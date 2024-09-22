@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <button class="exit" onclick="location.href = '../../'">Exit</button>
+    <center>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.youtube.com/channel/UC0zD2tAEPHuZTD6WVExDFDQ" target="_blank">Youtube</a></li>
+            <li><a href="#videos">My Videos</a></li>
+            <li><a href="#books">My Books</a></li>
+        </ul>
+        <section id="home">
+            <p class="title">Hello</p>
+            <p class="subtitle">I am<br>Coologic</p>
+            <img id="profile" src="profile.png">
+            <br>
+            <br>
+        </section>
+        <p id="years" class="normal"></p>
+        <script>
+            var age;
+            var dateObj = new Date();
+            var month = dateObj.getUTCMonth() + 1;
+            var day = dateObj.getUTCDate();
+            var year = dateObj.getUTCFullYear();
+            var birthDate = [22, 12, 2011];
+    
+            if (month - birthDate[1] != 0) {
+                age = (year - birthDate[2]) - 1;
+            } else {
+                if (day - birthDate[0] != 0) {
+                    age = year - birthDate[2] - 1;
+                } else {
+                    age = year - birthDate[2];
+                }
+            }
+    
+            document.getElementById("years").innerHTML = "Hello, my name is Avyukth. My pen name is 'Coologic'. I am a coder who likes coding in Java or HTML (Hyper Text Markup Language). I am " + age + " years old."
+    
+        </script>
+        <section id="videos">
+            <p class="title">My Videos</p>
+            <hr>
+            <span class="video">
+                <iframe width="475" height="225" src="https://www.youtube.com/embed/lIeGZF_ZO7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="normal">2 apps that I've made (with code.org app lab)<br>I made a few apps and wanted to show<br>you them in this video.</p>
+            </span>
+            <span class="video">
+                <iframe  width="475" height="225" src="https://www.youtube.com/embed/nlpJKDPxap4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="normal">How to protect yourself from the Coronavirus.<br>I explain how to protect yourself from<br>the Coronavirus.</p>
+            </span>
+            <span class="video">
+                <iframe width="475" height="225" src="https://www.youtube.com/embed/0X2SbJ8eurI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="normal">What is Photosynthesis?<br>I explain what is<br>photosynthesis.</p>
+            </span>
+            <span class="video">
+                <iframe width="475" height="225" src="https://www.youtube.com/embed/itOwSzftE6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="normal">Space and Everything About it.<br>I talk about space and what is it.</p>
+            </span>
+        </section>
+        <section id="books">
+            <p id="margin" class="title">My Books</p>
+            <hr>
+            <span>
+                <span class="item">
+                    <iframe id="iframebook" width="560" height="315" src="stories/monsterwater.html">
+                    </iframe>
+                    <br>
+                    <p id="titlebook" class="subtitle">The Monster of the Water</p>
+                    <p id="sorry" class="title"><b>NOTE: </b>I cannot find the link to my books, sorry :(</p>
+                </span>
+                <span class="icon-left" onclick="Left()"><img src="left.png" style="display: inline; cursor: pointer;"></span>
+                <span class="icon-right" onclick="Right()"><img src="right.png" style="display: inline; cursor: pointer;"></span>
+            </span>
+        </section>
+    </center>
+</body>
+</html>

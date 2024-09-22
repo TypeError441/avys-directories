@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    background: rgb(0, 200, 255);
+    font-family: 'Oxygen', sans-serif;
+}
+.title {
+    font-size: 30px;
+    font-weight: 700;
+}
+.subtitle {
+    font-size: 25px;
+    font-weight: 500;
+}
+.normal {
+    font-size: 20px;
+    font-weight: 300;
+}
+.thin {
+    font-size: 20px;
+    font-weight: 100;
+}
+li {
+    display: inline;
+    color: black;
+    padding-left: 33px;
+    padding-right: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+li:hover {
+    background-color: cornflowerblue;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.exit {position:fixed;z-index:5;top:8em;right:1em;border:none;background-color:#ff584c;color:white;padding:1em 2em;border-radius:1em;letter-spacing:0px;font-size:1em;font-weight:600;}.exit:hover{cursor:pointer;}

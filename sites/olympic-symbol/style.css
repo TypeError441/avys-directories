@@ -1,0 +1,27 @@
+.bodyBG {
+	font-family: 'Ubuntu', sans-serif;
+	background-image: url(bodyBG.jpg);
+}
+#canvas01 {
+	border-width: 10px;
+	background-color: white; 
+	border-style: ridge;
+}
+.title {
+    font-size: 50px;
+    font-weight: 700;
+}
+.subtitle {
+    font-size: 45px;
+    font-weight: 500;
+}
+.normal {
+    font-size: 30px;
+    font-weight: 400;
+}
+.thin {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.exit {position:fixed;z-index:5;top:1em;right:1em;border:none;background-color:#ff584c;color:white;padding:1em 2em;border-radius:1em;letter-spacing:0px;font-size:1em;font-weight:600;}.exit:hover{cursor:pointer;}

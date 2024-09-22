@@ -1,0 +1,31 @@
+.title {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2em;
+}
+
+.directories {
+    margin: 1em;
+    display: grid;
+    grid-template-areas:
+    'item item item'
+    'item item item'
+    'item item item'
+    'item item item'
+    'item item item'
+    'item item item'
+    'item item item'
+    'item item item'
+    'item item item'
+    'item item item';
+}
+
+
+
+.directories button.directory {
+    margin: 1em;
+    padding: 1em;
+    border: none;
+    border-radius: 1.5em;
+}

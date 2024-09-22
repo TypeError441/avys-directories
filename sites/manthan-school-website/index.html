@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Manthan International School</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <button class="exit" onclick="location.href = '../../'">Exit</button>
+        <nav class="navbar-inverse" style="position: sticky; background-color: #ffff; top: 0; z-index: 99999">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="manthan-logo.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#campuslife">Campus Life</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#whatsnew">What's New</a></li>
+                    <li><a href="#alumni">Alumni</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="container">
+            <marquee onmouseover="this.stop();" onmouseout="this.start();" style="background-color: #7DD2FA">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/y8zcJeZoYus"
+                    frameborder="0"
+                    allow="accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </marquee>
+            <section id="campuslife" style="background-color: #7AF5ED">
+                <p class="title text-success">Campus Life</p>
+                <div style="display: inline-block; width: 500px; text-align: center; background-color: lightblue;">
+                    <img class="img-responsive" src="music.jpg" style="width: 500; height: 500;">
+                    <p class="title text-capitalize">music room</p>
+                    <p class="subtitle"><i>Manthan takes pride in encouraging and inspiring children to read from a very young age. It is our strong belief that reading enhances one's life both, academically and socially. As a school, we strive to make each student develop the zeal to read and enjoy different literary works.</i></p>
+                </div>
+                <div style="display: inline-block; width: 500px; text-align: center; background-color: lightgreen;">
+                    <img class="img-responsive" src="sciencelabs.png" style="width: 500; height: 500;">
+                    <p class="title text-capitalize">science lab</p>
+                    <p class="subtitle"><i>Our science labs allow students to gain hands-on experience of what they learn in the classroom. Throughout the course of every unit, we ensure students get an opportunity for practical work in the lab in all three sciences, Physics, Chemistry and Biology.</i></p>
+                </div>
+            </section>
+            <section id="achievements" style="background-color: #64DEB3; height: 200px;">
+                <p class="title text-success">Achievements</p>
+                <div id="achievement01" style="width: 100%;">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="background-color: cornflowerblue">
+                        <p class="text-success text-left text-capitalize title">inter school debate</p>
+                        <p class="subtitle">Won first prize in interschool on environment pollution</p>
+                    </div>
+                </div>
+                <div id="achievement02">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="background-color: deepskyblue">
+                        <p class="text-success text-left text-capitalize title">inter school competition</p>
+                        <p class="subtitle">Runnerup in football competition for 2018 across Hyderabad</p>
+                    </div>
+                </div>
+                <div id="achievement03" style="width: 100%;">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="background-color: cornflowerblue">
+                        <p class="text-success text-left text-capitalize title">academic awards</p>
+                        <p class="subtitle">All of our students scored above 75% aggregate across IGCSE and CBSE</p>
+                    </div>
+                </div>
+                <div id="achievement04">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="background-color: deepskyblue">
+                        <p class="text-success text-left text-capitalize title">science award</p>
+                        <p class="subtitle">Our project has qualified to the top 6 best ‘Spark Innovation Award 2018’ </p>
+                    </div>
+                </div>
+            </section>
+            <section id="whatsnew" style="background-color: #76ffa8">
+                <p class="title text-success">What's New?</p>
+                <div id="item01" class="newItem">
+                    <p class="subtitle text-success">Digital Classrooms</p>
+                    <p class="normal">A new SmartBoard and a Projector in every classroom.</p>
+                </div>
+                <div id="item02" class="newItem">
+                    <p class="subtitle text-success">Interactive Learning</p>
+                    <p class="normal">Skills-based, student-centered, inquiry-oriented, personalized model of learning.</p>
+                </div>
+                <div id="item03" class="newItem">
+                    <p class="subtitle text-success">Project Based Learning</p>
+                    <p class="normal">Doing is learning at Manthan. Students now apply knowledge in practical project work.</p>
+                </div>
+            </section>
+            <section id="alumni">
+                <div class="alumni01" style="display: inline-block">
+                    <img src="pm.png" data-toggle="modal" data-target="#modal01" style="height: 200px;">
+                    <p class="text-success normal">Person A</p>
+                </div>
+                <div class="modal fade" id="modal01">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <p class="modal-title text-success normal">Person A</p>
+                            </div>
+
+                            <div class="modal-body">
+                                <img src="pm.png" style="height: 200px;">
+                                <p class="p_modal">He is the Prime Minister of India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alumni02" style="display: inline-block">
+                    <img src="sund.png" data-toggle="modal" data-target="#modal02" style="height: 200px;">
+                    <p class="text-success normal">Person B</p>
+                </div>
+                <div class="modal fade" id="modal02">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <p class="modal-title text-success normal">Person A</p>
+                            </div>
+
+                            <div class="modal-body">
+                                <img src="sund.png" style="height: 200px;">
+                                <p class="p_modal">He is the CEO of Google and Alphabet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contactus">
+                <p class="title text-success">Contact Us</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.9972546058825!2d78.29620771560104!3d17.459845505305225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb932bd092f495%3A0xe82bd792d1d25591!2sManthan%20International%20School!5e0!3m2!1sen!2sin!4v1615386949550!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </div>
+    </body>
+</html>

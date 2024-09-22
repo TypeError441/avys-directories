@@ -1,0 +1,21 @@
+* { font-family: 'Montserrat', sans-serif; }
+body {
+    background: linear-gradient(to bottom right, #168aad, #34a0a4, #52b69a, #76c893);
+}
+.container-casestudy {
+    border-radius: 4em 10px 4em 10px;
+    background: #cccccc;
+    padding: 1em 2em;
+    width: 50ch;
+    margin: 0 0 5em 20px;
+}
+.image-casestudy {
+    width: 400px;
+    border: 2px solid #ffffff;
+}
+hr {
+    width: 100%;
+    border: 1px solid #ffffff;
+}
+
+.exit {position:fixed;z-index:5;top:1em;right:1em;border:none;background-color:#ff584c;color:white;padding:1em 2em;border-radius:1em;letter-spacing:0px;font-size:1em;font-weight:600;}.exit:hover{cursor:pointer;}
