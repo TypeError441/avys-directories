@@ -6,6 +6,7 @@ import { firebaseConfig } from "./utils/config.js";
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const database = getDatabase(app);
 
 $(document).ready(function() {
     $(".directories").hide();
