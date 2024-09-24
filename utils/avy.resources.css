@@ -57,7 +57,7 @@ button {
     border: none;
     border-radius: 1.5em;
 }
-button:hover { cursor: pointer; }
+button:hover { cursor: pointer; background-color: #bebebe; }
 
 .submit { background-color: #4cff4f; }
 .submit:hover { background-color: #34b336; }
