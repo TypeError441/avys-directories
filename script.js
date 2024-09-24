@@ -18,12 +18,13 @@ $(document).ready(function() {
             $(".directories").show();
         })
     } else {
-    $(".directories").hide();
-    $(".login").show();
-    $(".login > .errorText").hide();
-    $(".register").hide();
-    $(".register > .errorText").hide();
-
+        $(".directories").hide();
+        $(".login").show();
+        $(".login > .errorText").hide();
+        $(".register").hide();
+        $(".register > .errorText").hide();
+    }
+    
     $(".login > .submit").click(function() {
         signInWithEmailAndPassword(auth, $(".login > input[type='email']").val(), $(".login > input[type='password']").val())
         .then((userCredential) => {
@@ -61,7 +62,6 @@ $(document).ready(function() {
             $(".register > .errorText").show();
         });
     });
-    }
 
     $(".exit").click(function() {
         signOut(auth).then(() => {});
