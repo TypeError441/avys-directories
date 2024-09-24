@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js"
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js"
 import { getDatabase } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js"
-import { firebaseConfig } from "./utils/config";
+import { firebaseConfig } from "./utils/config.js";
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
