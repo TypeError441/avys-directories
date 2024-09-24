@@ -8,12 +8,14 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const database = getDatabase(app);
 
+// Login and log out
 $(document).ready(function() {
     $(".directories").hide();
     $(".login").hide();
     $(".login > .errorText").hide();
     $(".register").hide();
     $(".register > .errorText").hide();
+
     signInWithEmailAndPassword(auth, localStorage.getItem("email"), localStorage.getItem("password"))
     .then((userCredential) => {
         const user = userCredential.user;
@@ -76,4 +78,6 @@ $(document).ready(function() {
     });
 });
 
-// auth.currentUser
+set(ref(database, 'sites/sigma/users/' + auth.currentUser.uid), {
+    name: "Rizzler",
+});
