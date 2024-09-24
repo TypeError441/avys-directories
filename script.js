@@ -7,8 +7,6 @@ import { firebaseConfig } from "./utils/config";
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-function enterDirectory(directory) { location.href = "./sites/" + directory; }
-
 $(document).ready(function() {
     $(".directories").hide();
     $(".login").show();
