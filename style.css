@@ -29,6 +29,11 @@ button.directory {
 }
 
 .login {
-    text-align: center;
-    background-color: #b9b9b9;
+    background-color: #e8e8e8;
+    box-shadow: 0 5px 5px black;
+    border-radius: 2em;
+    padding: 3em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
