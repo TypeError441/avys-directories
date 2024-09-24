@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js"
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-auth.js"
-import { getDatabase } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js"
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js"
 import { firebaseConfig } from "./utils/config.js";
 
 // Initialize Firebase
@@ -78,6 +78,18 @@ $(document).ready(function() {
     });
 });
 
-set(ref(database, 'sites/sigma/users/' + auth.currentUser.uid), {
+set(ref(database, 'sites/sigma/users/'), {
     name: "Rizzler",
 });
+
+const user = auth.currentUser;
+if (user !== null) {
+    user.providerData.forEach((profile) => {
+      console.log("Sign-in provider: " + profile.providerId);
+      console.log("  Provider-specific UID: " + profile.uid);
+      console.log("  Name: " + profile.displayName);
+      console.log("  Email: " + profile.email);
+      console.log("  Photo URL: " + profile.photoURL);
+    });
+  }
+print("brother")
