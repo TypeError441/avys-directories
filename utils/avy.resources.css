@@ -55,7 +55,7 @@ button {
     margin: 1em;
     padding: 1em;
     border: none;
-    border-radius: 1.5em;
+    border-radius: 1em;
 }
 button:hover { cursor: pointer; background-color: #cdcdcd; }
 
