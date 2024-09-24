@@ -46,6 +46,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 input {
     display: block;
+    border: 2px solid #bdbdbd;
+    border-radius: 1em;
+    padding: 1em;
 }
 
 button:hover { cursor: pointer; }
