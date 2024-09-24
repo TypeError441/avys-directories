@@ -78,8 +78,8 @@ $(document).ready(function() {
     });
 });
 
-set(ref(database, 'sites/sigma/users/'), {
-    name: "Rizzler",
+set(ref(database, 'sites/test/users/'), {
+    name: "TestUser",
 });
 
 print("brother")
