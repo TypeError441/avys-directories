@@ -21,13 +21,6 @@
     'item item item';
 }
 
-button.directory {
-    margin: 1em;
-    padding: 1em;
-    border: none;
-    border-radius: 1.5em;
-}
-
 .login {
     background-color: #e8e8e8;
     box-shadow: 0 2px 5px #000000aa;
