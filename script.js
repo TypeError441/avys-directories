@@ -8,22 +8,20 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 $(document).ready(function() {
-    if(localStorage.getItem("email") != null && localStorage.getItem("password") != null) {
-        signInWithEmailAndPassword(auth, localStorage.getItem("email"), localStorage.getItem("password"))
-        .then((userCredential) => {
-            const user = userCredential.user;
-            $(".login").hide();
-            $(".register").hide();
-
-            $(".directories").show();
-        })
-    } else {
-        $(".directories").hide();
-        $(".login").show();
-        $(".login > .errorText").hide();
+    $(".directories").hide();
+    $(".login").hide();
+    $(".login > .errorText").hide();
+    $(".register").hide();
+    $(".register > .errorText").hide();
+    signInWithEmailAndPassword(auth, localStorage.getItem("email"), localStorage.getItem("password"))
+    .then((userCredential) => {
+        const user = userCredential.user;
+        $(".login").hide();
         $(".register").hide();
-        $(".register > .errorText").hide();
-    }
+
+        $(".directories").show();
+    })
+    .catch((error) => { $(".login").show(); });
     
     $(".login > .submit").click(function() {
         signInWithEmailAndPassword(auth, $(".login > input[type='email']").val(), $(".login > input[type='password']").val())
