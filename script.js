@@ -45,6 +45,6 @@ $(function() {
     $(".login").show();
 
     $(".login > .submit").click(function() {
-        
+
     });
 });
