@@ -38,9 +38,9 @@ function login(email, password) {
         return "Error " + errorCode + ": " + errorMessage;
     });
 }
-function enter(directory) { location.href = "./sites/" + directory; }
+function enterDirectory(directory) { location.href = "./sites/" + directory; }
 
-$(function() {
+$(document).ready(function() {
     $(".directories").hide();
     $(".login").show();
 
