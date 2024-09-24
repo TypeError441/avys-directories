@@ -1,4 +1,4 @@
-.title {
+.fullscreen {
     text-align: center;
     background-color: black;
     color: white;
@@ -21,11 +21,14 @@
     'item item item';
 }
 
-
-
 button.directory {
     margin: 1em;
     padding: 1em;
     border: none;
     border-radius: 1.5em;
+}
+
+.login {
+    text-align: center;
+    background-color: #b9b9b9;
 }
