@@ -2,20 +2,15 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/fireba
 import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js"
 import { firebaseConfig } from "./utils/config.js";
 
-// Initialize firebase
-const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
 
-// Login and log out
-$(document).ready(function() {
-    $(".directories").hide();
-    $(".login").hide();
-    $(".login > .errorText").hide();
-    $(".register").hide();
-    $(".register > .errorText").hide();
+$(function() {
+    // Initialization
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    if(localStorage.getItem("uuid") == null) localStorage.setItem("uuid", crypto.randomUUID());
 
+    set(ref(database, 'sites/test/users/' + localStorage.getItem("uuid")), {
+        name: "User" + localStorage.getItem("uuid"),
+    });
 });
 
-set(ref(database, 'sites/test/users/'), {
-    name: "TestUser",
-});
