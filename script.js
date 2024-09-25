@@ -10,7 +10,7 @@ $(function() {
     if(localStorage.getItem("uuid") == null) localStorage.setItem("uuid", crypto.randomUUID());
 
     set(ref(database, 'sites/test/users/' + localStorage.getItem("uuid")), {
-        name: "User" + localStorage.getItem("uuid"),
+        name: "User " + localStorage.getItem("uuid"),
     });
 });
 

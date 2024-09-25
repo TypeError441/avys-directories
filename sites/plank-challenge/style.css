@@ -1,0 +1,12 @@
+.shadow { box-shadow: 0 0 5px #6fc8ff; }
+.grid-container {
+    margin: 1em;
+    display: grid;
+    grid-template-areas:
+    'tl tl tl tl'
+    'cr cr lg lg'
+    'lb rn rn rn'
+    'lb rn rn rn';
+}
+
+.tl { grid-area: tl; }
