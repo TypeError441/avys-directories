@@ -10,3 +10,7 @@
 }
 
 .tl { grid-area: tl; }
+.cr { grid-area: cr; }
+.lg { grid-area: lg; }
+.lb { grid-area: lb; }
+.rn { grid-area: rn; }
